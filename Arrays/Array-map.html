@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array Methods</title>
+    <title>Array Method map()</title>
 </head>
 <body>
-    <h1>Array Methods find()</h1>
+    <h1>Array Method map()</h1>
     <p>
-        find() <br>
-        1. Find the element with rating >= 3 <br>
-        2. Find the element with type ‘vegetable’ <br>
-        3. Find the element with price less than(<) 15 <br>
-        4. Find the element with title which contains the word ‘Lemon’ <br>
-        5. Find the element with height=450 and width=450 
+        map() <br>
+        1. Add the property ‘isAvailable: true’ to all the elements
     </p>
     <script>
         let superMarket = [{
@@ -469,40 +465,9 @@
                 "rating": 3
             }
         ];
-        // // 1)
-        // superMarket.find((item) => {
-        //     if(item.rating >= 3){
-        //         console.log(item);
-        //     }
-        // });
-        // // 2)
-        // superMarket.find((item => {
-        //     item.title.split(" ").forEach(val => {
-        //         if(val === 'Lemon'){
-        //             console.log(item);
-        //         }
-        //     })
-        // }))
-        // 3)
-        // superMarket.find((item) => {
-        //     if(item.type === 'vegetable'){
-        //         console.log(item)
-        //     }
-        // })
-        // // 4)
-        // superMarket.find((item) => {
-        //     if(item.price < 15){
-        //         console.log(item);
-        //     }
-        // });
-        // // 5)
-        // superMarket.find((item) => {
-        //     if(item.height === 450 && item.width === 450){
-        //         console.log(item);
-        //     }
-        // });
-
-
+        let set = new Set(superMarket);
+        // set.add[{"isAvailable": true}];
+        // console.log(set);
     </script>
 </body>
 </html>
